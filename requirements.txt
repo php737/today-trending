@@ -1,3 +1,5 @@
+curl_cffi>=0.7
 jieba>=0.42
+lxml>=5.0
 wordcloud>=1.9
 matplotlib>=3.5

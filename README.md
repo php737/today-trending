@@ -21,7 +21,7 @@ cd today-trending
 pip install -r requirements.txt
 ```
 
-依赖:`jieba`、`wordcloud`、`matplotlib`(只有词云功能需要后两个)。
+依赖:`curl_cffi`(必需,三个平台的抓取都走它)、`jieba`、`lxml`(必需),`wordcloud`、`matplotlib`(仅词云功能需要)。
 
 ## 用法
 
@@ -115,7 +115,7 @@ python3 scripts/make_wordcloud.py --top 20
 
 ## 非官方声明
 
-本项目与微博、抖音、百度、京东等平台**无任何隶属或合作关系**,仅调用其公开可见的榜单页面/接口。相关数据版权归各平台所有,使用时请遵守各平台的服务条款。
+本项目与微博、抖音、百度三个平台**无任何隶属或合作关系**,仅调用其公开可见的榜单页面/接口。相关数据版权归各平台所有,使用时请遵守各平台的服务条款。
 
 ## License
 
