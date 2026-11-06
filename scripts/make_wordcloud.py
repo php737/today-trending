@@ -1,4 +1,4 @@
-#!python3
+#!/usr/bin/env python3
 """今日热榜 · 词云生成模块
 
 只负责「读词频 → 画词云 → 存 PNG」,切词逻辑在 segment.py。

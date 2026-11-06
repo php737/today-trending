@@ -1,4 +1,4 @@
-#!python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """today-trending — 微博 / 抖音 / 百度 热搜一键拉取
 

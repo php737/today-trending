@@ -16,14 +16,14 @@ SKILL.md 只留触发条件和入口,细节在这里。**词云是按需功能 �
 
 ```bash
 # 一步出图
-python3 scripts/make_wordcloud.py --top 20
+python3 ~/.openclaw/skills/today-trending/scripts/make_wordcloud.py --top 20
 
 # 只看词频
-python3 scripts/segment.py --top 20 --topn 30
+python3 ~/.openclaw/skills/today-trending/scripts/segment.py --top 20 --topn 30
 
 # 词频存盘(仅当需要留存/复用)
-python3 scripts/segment.py --top 20 --out /tmp/w.json
-python3 scripts/make_wordcloud.py --from /tmp/w.json
+python3 ~/.openclaw/skills/today-trending/scripts/segment.py --top 20 --out /tmp/w.json
+python3 ~/.openclaw/skills/today-trending/scripts/make_wordcloud.py --from /tmp/w.json
 ```
 
 **固定输出**:`<skill-dir>/image/wordcloud.png`,**同名覆盖**,不用手动删。

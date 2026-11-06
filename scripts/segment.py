@@ -1,4 +1,4 @@
-#!python3
+#!/usr/bin/env python3
 """今日热榜 · jieba 分词模块
 
 只负责「拉热榜 → 清洗 → jieba 切词 → 输出词频」,不画图。

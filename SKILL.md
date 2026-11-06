@@ -1,7 +1,7 @@
 ---
 name: "today-trending"
 description: "获取今日微博、抖音、百度热搜排行榜 - 实时热门话题一站式查询"
-metadata: { "openclaw": { "emoji": "🔥", "version": "1.0.1", "requires": { "bins": ["python3"] } } }
+metadata: { "openclaw": { "emoji": "🔥", "version": "1.0.2", "requires": { "bins": ["python3"] } } }
 ---
 
 # 今日热榜 (Today Trending)
@@ -11,9 +11,9 @@ metadata: { "openclaw": { "emoji": "🔥", "version": "1.0.1", "requires": { "bi
 ## 取数
 
 ```bash
-python3 scripts/trending.py                    # 三平台各 10 条(默认)
-python3 scripts/trending.py --platform weibo   # 单平台
-python3 scripts/trending.py --top 20           # 要更多时显式指定,1-50
+python3 ~/.openclaw/skills/today-trending/scripts/trending.py                    # 三平台各 10 条(默认)
+python3 ~/.openclaw/skills/today-trending/scripts/trending.py --platform weibo   # 单平台
+python3 ~/.openclaw/skills/today-trending/scripts/trending.py --top 20           # 要更多时显式指定,1-50
 ```
 
 🚫 **不要加重定向**(`> file` / `2>&1`)—— stdout 本来就是纯 JSON
@@ -103,7 +103,7 @@ python3 scripts/trending.py --top 20           # 要更多时显式指定,1-50
 **只有用户明确要词云时才跑**,普通「今日热榜」不生成、不附带。
 
 ```bash
-python3 scripts/make_wordcloud.py --top 20
+python3 ~/.openclaw/skills/today-trending/scripts/make_wordcloud.py --top 20
 ```
 
 固定输出 `image/wordcloud.png`(同名覆盖),出图后用 `MEDIA:` 单独一行发送。
