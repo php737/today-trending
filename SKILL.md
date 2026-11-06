@@ -1,7 +1,7 @@
 ---
 name: "today-trending"
 description: "获取今日微博、抖音、百度热搜排行榜 - 实时热门话题一站式查询"
-metadata: { "openclaw": { "emoji": "🔥", "requires": { "bins": ["python"] } } }
+metadata: { "openclaw": { "emoji": "🔥", "version": "1.0.0", "requires": { "bins": ["python3"] } } }
 ---
 
 # 今日热榜 (Today Trending)
